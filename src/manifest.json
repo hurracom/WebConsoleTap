@@ -1,0 +1,33 @@
+{
+  "manifest_version": 2,
+  "name": "WebConsoleTap",
+  "short_name": "WebConsoleTap",
+  "applications": {
+    "gecko": {
+      "id": "webconsoletap@hurra",
+      "strict_min_version": "55.0"
+    }
+  },
+  "description": "Simple extension based on JSErrorCollector used to tap into JavaScript errors and warnings and allow fetching them later, e.g. via WebDriver JS Interface.",
+  "version": "1.0",
+  "homepage_url": "https://github.com/hurracom/WebConsoleTap",
+  "icons": {
+    "16": "icons/webconsoletap-16.png",
+    "48": "icons/webconsoletap-48.png",
+    "64": "icons/webconsoletap-64.png",
+    "128": "icons/webconsoletap-128.png"
+  },
+
+  "permissions": [
+    "<all_urls>",
+    "storage"
+  ],
+
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "js": ["injector.js", "store.js"]
+    }
+  ],
+  "web_accessible_resources": ["consoletap.js"]
+}
