@@ -4,7 +4,7 @@
   "short_name": "WebConsoleTap",
   "applications": {
     "gecko": {
-      "id": "webconsoletap@hurra",
+      "id": "webconsoletap@hurracom",
       "strict_min_version": "55.0"
     }
   },
