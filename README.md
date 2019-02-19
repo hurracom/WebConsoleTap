@@ -1,4 +1,4 @@
-# WebConsoleTap
+# WebConsoleTap ![](src/icons/webconsoletap-48.png)
 
 Simple extension based on [JSErrorCollector](https://github.com/mguillem/JSErrorCollector) used to tap into JavaScript errors and warnings and allow fetching them later, e.g. via [WebDriver](https://www.seleniumhq.org/projects/webdriver/) JS Interface.
 
